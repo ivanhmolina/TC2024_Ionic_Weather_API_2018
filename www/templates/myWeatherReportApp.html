@@ -6,7 +6,10 @@
         <input type="text" placeholder="" ng-model="mdl.city_name">
       </label>
     </form>
-    <h4>{{mdl.city_name}}</h4>
-    <button id="myWeatherReportApp-button1" class="button button-positive button-block" ng-click="getWeather()">Get weather report</button>
+    <h4>City 	Name: 		{{mdl.city_name}}</h4>
+    <h4>Current Temp: 		{{mdl.current_temp}}</h4>
+    <h4>Weather Comment: 	{{mdl.weather_comment}}</h4>
+    <h4>Weather Icon: 		<img src="http://api.openweathermap.org/img/w/{{mdl.weather_icon}}.png"></h4>
+    <a id="myWeatherReportApp-button1" class="button button-positive button-block" ng-click="getWeather()">Get weather report</a>
   </ion-content>
 </ion-view>
