@@ -1,0 +1,12 @@
+<ion-view title="My Weather Report App" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="myWeatherReportApp-form1" class="list">
+      <h3 id="myWeatherReportApp-heading1" style="color:#000000;font-weight:400;">Write your city</h3>
+      <label class="item item-input" id="myWeatherReportApp-input1">
+        <input type="text" placeholder="" ng-model="mdl.city_name">
+      </label>
+    </form>
+    <h4>{{mdl.city_name}}</h4>
+    <button id="myWeatherReportApp-button1" class="button button-positive button-block" ng-click="getWeather()">Get weather report</button>
+  </ion-content>
+</ion-view>
